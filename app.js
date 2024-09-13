@@ -7,7 +7,7 @@ app.get("/", (req, res) => {
     success: true,
     hello: "world"
   })
-};
+});
 
 app.post("/cart", (req, res) => {
   res.status(200).json({
