@@ -9,6 +9,13 @@ app.get("/", (req, res) => {
   })
 };
 
+app.post("/cart", (req, res) => {
+  res.status(200).json({
+    success: true,
+    cart: "yes"
+  })
+});
+
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
 // server.keepAliveTimeout = 120 * 1000;
